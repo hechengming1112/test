@@ -2,7 +2,7 @@
 
 
 
-## 安装JDK
+## 安装JDK 
 
 先上oracle官网下载jdk
 [jdk8下载地址](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
@@ -18,14 +18,14 @@
   4. 进入/user/jdk目录中，执行`tar -xzvf jdk-8u251-linux-x64.tar.gz`
     ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616215255653.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU3MTc5NQ==,size_16,color_FFFFFF,t_70)
   5. 使用指定:`vim /etc/profile` 编辑profile文件配置java_home
-   `export JAVA_HOME=/user/jdk/jdk1.8.0_251
-   export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-   export PATH=$JAVA_HOME/bin:$PATH`
+      `export JAVA_HOME=/user/jdk/jdk1.8.0_251
+      export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+      export PATH=$JAVA_HOME/bin:$PATH`
     ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200618221032691.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU3MTc5NQ==,size_16,color_FFFFFF,t_70)
-
+    
     6.   让profile文件生效
       `source /etc/profile`
-
+    
      7.   查看使用是否成功
     `javac -version` 或者 `javac`
 注：
@@ -59,7 +59,7 @@
     PATH=$PATH:/usr/local/git/bin
     export PATH 
   8. 让profile文件生效
-  `source /etc/profile`
+    `source /etc/profile`
   9. 输入命令`git --version`查看版本
 
 
